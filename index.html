@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaadVerse – सर्वकलानां नादमयं</title>
+    <meta name="description" content="NaadVerse – An Immersive Multi-Art Festival | A Journey Through Sound, Light, and Spirit">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/e6c07d/meditation.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🪷</span>
+                <span>NaadVerse</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-spa"></i> Experiences <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#meditation"><i class="fas fa-om"></i> नाद ध्यान</a>
+                        <a href="#music"><i class="fas fa-music"></i> नाद Fusion</a>
+                        <a href="#art"><i class="fas fa-paint-brush"></i> नाद verse</a>
+                    </div>
+                </div>
+                <a href="#events" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i> Events
+                </a>
+                <a href="#gallery" class="nav-link">
+                    <i class="fas fa-images"></i> Gallery
+                </a>
+                <a href="#contact" class="cta-button nav-cta">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-video-overlay"></div>
+            <video class="hero-video" autoplay muted loop id="heroVideo">
+                <source src="https://player.vimeo.com/external/447852416.sd.mp4?s=5c7e6c8c9b0e9c5a8e9f8e7d6c5b4a3c2d1e0f0&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-particles" id="particles-js"></div>
+            <div class="sound-toggle" id="soundToggle">
+                <i class="fas fa-volume-mute"></i>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span>An Immersive Multi-Art Festival</span>
+                </div>
+                <h1 class="glow-text">NaadVerse</h1>
+                <p class="tagline">A Journey Through Sound, Light, and Spirit</p>
+                <p class="tagline">“नाद Verse” is a transformative spiritual and cultural experience — where mental and spiritual well-being merge with meditation, rhythm, art, and performance to create an immersive festival of presence and sound.</p>
+                <div class="cta-buttons">
+                    <a href="#about" class="primary-button pulse-button">
+                        <i class="fas fa-compass"></i> Explore Offerings
+                    </a>
+                    <a href="#meditation" class="secondary-button">
+                        <i class="fas fa-om"></i> नाद ध्यान
+                    </a>
+                </div>
+
+                <div class="hero-features">
+                    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                        <span class="feature-icon"><i class="fas fa-spa"></i></span>
+                        <span>Co-Creation</span>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                        <span class="feature-icon"><i class="fas fa-music"></i></span>
+                        <span>Sound • Light • Movement</span>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                        <span class="feature-icon"><i class="fas fa-heart"></i></span>
+                        <span>Audience as Artists</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="floating-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a82d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Sound Healing Session" 
+                             class="main-hero-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="hero-image-glow"></div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="floating-element floating-1">
+                        <div class="element-inner">
+                            <i class="fas fa-om"></i>
+                        </div>
+                    </div>
+                    <div class="floating-element floating-2">
+                        <div class="element-inner">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="floating-element floating-3">
+                        <img src="https://img.icons8.com/ios-filled/50/c7a8c7/peace.png" alt="Peace icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Discover</span>
+                <h2>Intro</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-om"></i>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="intro-text">“नाद Verse” is a transformative spiritual and cultural experience — where mental and spiritual well-being merge with meditation, rhythm, art, and performance to create an immersive festival of presence and sound.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item" role="link" tabindex="0" onclick="location.href='#meditation'" onkeydown="if(event.key==='Enter'){location.href='#meditation'}">
+                            <div class="feature-icon">
+                                <i class="fas fa-om"></i>
+                            </div>
+                            <div class="feature-text">
+                                <p>नादोऽस्मि परमो ब्रह्म,<br>नादोऽहं सर्वमावृतम्।<br>नादो मे जन्ममृत्यु,<br>नादेनैव विलीयते॥</p>
+                                <h3>नाद ध्यान</h3>
+                                <p>नाद ध्यान is not a technique. It is an experience — a state of deep inner realisation where the mind calms and the soul begins to remember its truth.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" role="link" tabindex="0" onclick="location.href='#music'" onkeydown="if(event.key==='Enter'){location.href='#music'}">
+                            <div class="feature-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="feature-text">
+                                <p>सर्वस्वरानां समन्वयः,<br>अनाहदनादध्वनिः।<br>तालसंगीतलयमिश्रः,<br>शृणु मायारससंपन्नः॥</p>
+                                <h3>नाद Fusion</h3>
+                                <p>A sonic journey blending classical & folk textures with modern electronic pulse. At नाद Fusion, music is not just heard; it’s felt.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" role="link" tabindex="0" onclick="location.href='#art'" onkeydown="if(event.key==='Enter'){location.href='#art'}">
+                            <div class="feature-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="feature-text">
+                                <p>सर्वकलानां नादमयं,<br>रूपरंगरससंपन्नम्।<br>शब्दसंगीतनृत्ययुग्मं,<br>शून्यशिवसहस्रितम्॥</p>
+                                <h3>नाद verse</h3>
+                                <p>Art is not just seen; it’s experienced. Performances are not just watched; they invite you to connect deeply with artists, audiences, and the universal rhythm of life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="about-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>We are offering: नाद ध्यान • नाद Fusion • नाद verse</p>
+                        <footer>- NaadVerse</footer>
+                    </blockquote>
+                </div>
+                
+                <div class="about-gallery" data-aos="fade-left">
+                    <div class="gallery-main">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Sound healing session" class="main-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <span>Sound Bath Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail active">
+                            <img src="https://images.unsplash.com/photo-1510894347714-3d26c1f3d20e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Meditation group">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1511993807578-701168605ad3?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Singing bowls">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Yoga at sunset">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-stats" data-aos="fade-up">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Sessions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Events</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0<sup>%</sup></div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Meditation Section -->
+    <section id="meditation" class="section dark-bg">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Inner Journey</span>
+                <h2>नाद ध्यान</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-spa"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-description">नादोऽस्मि परमो ब्रह्म,<br>नादोऽहं सर्वमावृतम्।<br>नादो मे जन्ममृत्यु,<br>नादेनैव विलीयते॥<br><br>नाद ध्यान is not a technique. It is an experience. A state of deep inner realisation where the mind calms, the breath aligns, and the soul begins to remember its truth. नाद ध्यान is the art of witnessing without interference.</p>
+            </div>
+            
+            <div class="meditation-carousel" data-aos="fade-up" data-aos-delay="200">
+                <div class="carousel-container">
+                    <!-- Meditation Card 1 -->
+                    <div class="meditation-card">
+                        <div class="meditation-image">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Woman meditating at sunrise">
+                            <div class="meditation-overlay">
+                                <a href="#" class="play-button"><i class="fas fa-play"></i></a>
+                            </div>
+                            <span class="duration">Mornings</span>
+                        </div>
+                        <div class="meditation-content">
+                            <div class="meditation-category">Experience</div>
+                            <h3>Not a Technique</h3>
+                            <p>नाद ध्यान is not a technique. It is an experience.</p>
+                            <div class="meditation-meta">
+                                <span><i class="far fa-user"></i> Collective</span>
+                                <span><i class="far fa-heart"></i> Resonance</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Meditation Card 2 -->
+                    <div class="meditation-card">
+                        <div class="meditation-image">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Sound healing session">
+                            <div class="meditation-overlay">
+                                <a href="#" class="play-button"><i class="fas fa-play"></i></a>
+                            </div>
+                            <span class="duration">Afternoons</span>
+                        </div>
+                        <div class="meditation-content">
+                            <div class="meditation-category">Alignment</div>
+                            <h3>Breath & Inner Rhythm</h3>
+                            <p>A state of deep inner realisation where the mind calms and the breath aligns.</p>
+                            <div class="meditation-meta">
+                                <span><i class="far fa-user"></i> Artists + Audience</span>
+                                <span><i class="far fa-heart"></i> Co-create</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Meditation Card 3 -->
+                    <div class="meditation-card">
+                        <div class="meditation-image">
+                            <img src="https://images.unsplash.com/photo-1510894347714-3d26c1f3d20e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Group meditation">
+                            <div class="meditation-overlay">
+                                <a href="#" class="play-button"><i class="fas fa-play"></i></a>
+                            </div>
+                            <span class="duration">Evenings</span>
+                        </div>
+                        <div class="meditation-content">
+                            <div class="meditation-category">Witnessing</div>
+                            <h3>Without Interference</h3>
+                            <p>नाद ध्यान is the art of witnessing — letting sound, breath, and silence reveal truth.</p>
+                            <div class="meditation-meta">
+                                <span><i class="far fa-user"></i> Confluence</span>
+                                <span><i class="far fa-heart"></i> MahāNaad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-nav next"><i class="fas fa-chevron-right"></i></button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
+            <div class="meditation-features" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>“The Naad Circle”</h4>
+                    <p>Artists and audiences gather around a central fire: drums, chants, laughter, silence.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h4>Audience as Co-Creators</h4>
+                    <p>Everyone paints, dances, sings, or simply resonates — no one is a spectator.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>The Final Dawn</h4>
+                    <p>A grand silence ritual — thousands meditate together, remembering the Naad within.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Duration</h4>
+                    <p>3–5 days of immersive art, music, meditation, and co-creation.</p>
+                </div>
+            </div>
+            
+            <div class="cta-box" data-aos="fade-up" data-aos-delay="600">
+                <div class="cta-content">
+                    <h3>NaadVerse Is Not a Stage</h3>
+                    <p>Every corner — from canvas to crowd — becomes a shared field of creation where sound births form, and silence dissolves all.</p>
+                    <a href="#contact" class="primary-button">Join the Journey</a>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Peaceful meditation">
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-elements">
+            <div class="floating-element">
+                <img src="https://img.icons8.com/ios-filled/50/8de2d0/meditation.png" alt="Meditation icon">
+            </div>
+            <div class="floating-element">
+                <img src="https://img.icons8.com/ios-filled/50/e6c07d/peace.png" alt="Peace icon">
+            </div>
+            <div class="floating-element">
+                <img src="https://img.icons8.com/ios-filled/50/c7a8c7/lotus.png" alt="Lotus icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="section dark-bg">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Sonic Journeys</span>
+                <h2>नाद Fusion</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-music"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-description">सर्वस्वरानां समन्वयः,<br>अनाहदनादध्वनिः।<br>तालसंगीतलयमिश्रः,<br>शृणु मायारससंपन्नः॥<br><br>“नाद Fusion” is a sonic journey blending classical & folk textures with modern electronic pulse. A DJ orchestrates a collaborative live performance with musicians playing violin, darabuka, cajon, djembe, drum, guitar, mouth organ, and captivating vocals. At नाद Fusion, music is not just heard; it’s felt.</p>
+            </div>
+            
+            <div class="music-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- Now Playing Section -->
+                <div class="now-playing-container">
+                    <div class="now-playing">
+                        <div class="album-art">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Album Art" id="album-art">
+                            <div class="vinyl">
+                                <div class="vinyl-inner"></div>
+                            </div>
+                        </div>
+                        <div class="track-info">
+                            <h3 id="track-title">MahāNaad</h3>
+                            <p id="artist-name">NaadVerse Collective</p>
+                            <div class="track-progress">
+                                <span id="current-time">0:00</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="progress-bar">
+                                        <div class="progress" id="progress"></div>
+                                    </div>
+                                    <div class="progress-hover" id="progress-hover"></div>
+                                </div>
+                                <span id="duration">4:32</span>
+                            </div>
+                            <div class="player-controls">
+                                <button class="control-btn shuffle" title="Shuffle">
+                                    <i class="fas fa-random"></i>
+                                </button>
+                                <button class="control-btn" id="prev" title="Previous">
+                                    <i class="fas fa-step-backward"></i>
+                                </button>
+                                <button class="control-btn play" id="play" title="Play/Pause">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="control-btn" id="next" title="Next">
+                                    <i class="fas fa-step-forward"></i>
+                                </button>
+                                <button class="control-btn repeat" title="Repeat">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                                <div class="volume-control">
+                                    <button class="volume-btn" title="Mute/Unmute">
+                                        <i class="fas fa-volume-up"></i>
+                                    </button>
+                                    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.7">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Playlist -->
+                    <div class="playlist-container">
+                        <div class="playlist-header">
+                            <h4>Playlist</h4>
+                            <div class="playlist-actions">
+                                <button class="playlist-btn" id="shuffle-playlist" title="Shuffle All">
+                                    <i class="fas fa-random"></i>
+                                </button>
+                                <button class="playlist-btn" id="clear-queue" title="Clear Queue">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="playlist" id="playlist">
+                            <!-- Playlist items will be added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Music Categories -->
+                <div class="music-categories">
+                    <h3>Browse by Category</h3>
+                    <div class="category-grid">
+                        <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1493225457120-a5b138c08b75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                            <div class="category-overlay">
+                                <h4>Indian Classical</h4>
+                                <span>Ragas</span>
+                            </div>
+                        </div>
+                        <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                            <div class="category-overlay">
+                                <h4>Afro-Techno</h4>
+                                <span>Pulse</span>
+                            </div>
+                        </div>
+                        <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                            <div class="category-overlay">
+                                <h4>Ambient</h4>
+                                <span>Space</span>
+                            </div>
+                        </div>
+                        <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a5d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                            <div class="category-overlay">
+                                <h4>Tribal Naad</h4>
+                                <span>Rhythm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Playlists -->
+                <div class="featured-playlists">
+                    <div class="section-header">
+                        <h3>Featured Playlists</h3>
+                        <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="playlist-grid">
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a5d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Morning Meditation">
+                                <button class="play-button"><i class="fas fa-play"></i></button>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Morning Meditation</h4>
+                                <p>Start your day with peace and clarity</p>
+                                <span class="track-count">8 Tracks</span>
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Deep Sleep">
+                                <button class="play-button"><i class="fas fa-play"></i></button>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Deep Sleep</h4>
+                                <p>Drift into peaceful slumber</p>
+                                <span class="track-count">6 Tracks</span>
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <img src="https://images.unsplash.com/photo-1511993807578-701168605ad3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sound Bath">
+                                <button class="play-button"><i class="fas fa-play"></i></button>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Sound Bath</h4>
+                                <p>Healing frequencies for the soul</p>
+                                <span class="track-count">10 Tracks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Audio Element (Hidden) -->
+            <audio id="audio-player" preload="metadata">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <div class="floating-notes">
+            <div class="note">♪</div>
+            <div class="note">♫</div>
+            <div class="note">♩</div>
+            <div class="note">♬</div>
+        </div>
+    </section>
+
+    <!-- Art Section -->
+    <section id="art" class="section">
+        <div class="container">
+            <h2>नाद verse</h2>
+            <p class="section-intro">सर्वकलानां नादमयं,<br>रूपरंगरससंपन्नम्।<br>शब्दसंगीतनृत्ययुग्मं,<br>शून्यशिवसहस्रितम्॥</p>
+            <p class="section-intro">At नाद verse Art is not just seen; it’s experienced. Performances are not just watched; they invite you to connect deeply, creating an unbreakable bond between artists, audiences, and the universal rhythm of life.</p>
+            
+            <div class="art-gallery">
+                <div class="art-item">
+                    <div class="art-image"></div>
+                    <h3>Live Mural Painting</h3>
+                    <p>Canvas in sync with live music</p>
+                </div>
+                <div class="art-item">
+                    <div class="art-image"></div>
+                    <h3>Movement Labs</h3>
+                    <p>Rhythm through body and motion</p>
+                </div>
+                <div class="art-item">
+                    <div class="art-image"></div>
+                    <h3>Projection Mapping</h3>
+                    <p>Light as living sculpture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Journey</span>
+                <h2>NaadVerse Flow</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-description">Duration: 3–5 days of immersive art, music, meditation, and co-creation.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Mornings – “Anahata”</h3>
+                                <p>Sound meditations, sunrise ragas, and collective breathing circles to align inner rhythm.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Afternoons – “Karma Canvas”</h3>
+                                <p>Collaborative workshops: mural painting, movement labs, storytelling, projection mapping, and sound sculpting.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Evenings – “MahāNaad”</h3>
+                                <p>Grand confluence performances merging music, dance, light, and fire — the festival’s pulsating heart.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-drum"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Nights – “The Naad Circle”</h3>
+                                <p>Artists and audiences sit together around a central fire, co-creating spontaneous rhythms — drums, chants, laughter, silence.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-om"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>The Final Dawn</h3>
+                                <p>A grand silence ritual — thousands meditate together, realizing that the Naad, the sound of creation, is within.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section dark-bg">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Moments</span>
+                <h2>Gallery</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <i class="fas fa-images"></i>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-description">From canvas to crowd — a shared field of creation where sound births form, and silence dissolves all.</p>
+            </div>
+
+            <div class="art-gallery" data-aos="fade-up" data-aos-delay="200">
+                <div class="art-item">
+                    <div class="art-image"></div>
+                    <h3>Sound → Color</h3>
+                    <p>Live visual creation</p>
+                </div>
+                <div class="art-item">
+                    <div class="art-image"></div>
+                    <h3>Light → Ritual</h3>
+                    <p>Fire and lasers</p>
+                </div>
+                <div class="art-item">
+                    <div class="art-image"></div>
+                    <h3>Movement → Prayer</h3>
+                    <p>Dance and theatre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section dark-bg">
+        <div class="container">
+            <h2>Join NaadVerse</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> naadverse@gmail.com</p>
+                    <p><strong>Phone/WhatsApp:</strong> +91 90042 44607</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📱</a>
+                        <a href="#" class="social-icon">🎵</a>
+                        <a href="#" class="social-icon">▶️</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <select>
+                        <option value="">I'm interested in...</option>
+                        <option value="visual">Visual Arts</option>
+                        <option value="performing">Performing Arts</option>
+                        <option value="sonic">Sonic Arts</option>
+                        <option value="light">Fire & Light Arts</option>
+                        <option value="folk">Folk & Spiritual Traditions</option>
+                        <option value="collaboration">Collaboration</option>
+                    </select>
+                    <textarea placeholder="Your Message" rows="4"></textarea>
+                    <button type="submit" class="primary-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">NaadVerse</div>
+                <p>When the night ends, the rhythm remains.<br>NaadVerse is not over — it begins again in you.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <p class="copyright">&copy; 2025 NaadVerse. All rights reserved.</p>
+                <p class="copyright">Contact: <a href="mailto:hello@naadverse.com">hello@naadverse.com</a></p>
+                <p class="copyright">Made by <a href="https://brandera.co.in/" target="_blank" rel="noopener noreferrer">BrandEra</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
