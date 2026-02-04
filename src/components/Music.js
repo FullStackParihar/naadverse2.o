@@ -152,16 +152,16 @@ const Music = () => {
           <div className="streaming-platforms" data-aos="fade-up">
             <h3>Listen on Your Favorite Platform</h3>
             <div className="platform-buttons">
-              <a href="#" className="streaming-button">
+              <a href="https://open.spotify.com/" className="streaming-button" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-spotify"></i> Spotify
               </a>
-              <a href="#" className="streaming-button">
+              <a href="https://music.apple.com/" className="streaming-button" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-apple"></i> Apple Music
               </a>
-              <a href="#" className="streaming-button">
+              <a href="https://music.youtube.com/" className="streaming-button" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-youtube"></i> YouTube Music
               </a>
-              <a href="#" className="streaming-button">
+              <a href="https://soundcloud.com/" className="streaming-button" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-soundcloud"></i> SoundCloud
               </a>
             </div>

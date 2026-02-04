@@ -111,10 +111,18 @@ const Gallery = () => {
   };
 
   React.useEffect(() => {
-    if (selectedItem) {
-      window.addEventListener('keydown', handleKeyDown);
-      return () => window.removeEventListener('keydown', handleKeyDown);
-    }
+    if (!selectedItem) return;
+
+    const handler = (e) => {
+      if (e.key === 'Escape') {
+        // close lightbox directly here to avoid extra dependencies in the effect
+        setSelectedItem(null);
+        document.body.style.overflow = 'auto';
+      }
+    };
+
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
   }, [selectedItem]);
 
   return (
