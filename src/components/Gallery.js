@@ -106,10 +106,6 @@ const Gallery = () => {
     document.body.style.overflow = 'auto';
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Escape') closeLightbox();
-  };
-
   React.useEffect(() => {
     if (!selectedItem) return;
 
